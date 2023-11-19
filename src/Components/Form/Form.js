@@ -108,12 +108,11 @@ const FormStyled = styled.form`
         outline: none;
         border: none;
         padding: .5rem 1rem;
-        border-radius: 5px;
-        border: 2px solid #fff;
+        border-radius: 7px;
         background: transparent;
         resize: none;
-        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
-        color: rgba(34, 34, 96, 0.9);
+        box-shadow: 0px 1px 5px green;
+        color: black;
         &::placeholder{
             color: rgba(34, 34, 96, 0.4);
         }
@@ -139,7 +138,8 @@ const FormStyled = styled.form`
         button{
             box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
             &:hover{
-                background: var(--color-green) !important;
+                background: green !important;
+                box-shadow: 0px 1px 15px green;
             }
         }
     }
