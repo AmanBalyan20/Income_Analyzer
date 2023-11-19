@@ -48,6 +48,7 @@ function Expenses() {
 const ExpenseStyled = styled.div`
     display: flex;
     overflow: auto;
+    margin-top:60px;
     .total-income{
         color:black;
         display: flex;

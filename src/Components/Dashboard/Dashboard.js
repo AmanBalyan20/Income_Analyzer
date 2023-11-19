@@ -61,6 +61,7 @@ function Dashboard() {
 }
 
 const DashboardStyled = styled.div`
+    margin-top:80px;
     .stats-con {
         display: flex;
         justify-content: center;
