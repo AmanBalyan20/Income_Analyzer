@@ -14,6 +14,7 @@ export const GlobalProvider = ({children}) => {
     const [error, setError] = useState(null)
 
     //calculate incomes
+    axios.defaults.withCredentials = true;
     const addIncome = async (income) => {
         const response = await axios.post(`${BASE_URL}add-income`, income)
             .catch((err) =>{
