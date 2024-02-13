@@ -1,12 +1,21 @@
 {
-  "builds":[
-      { "src": "*.js", "use": "@vercel/node"}
+  "builds": [
+    { "src": "/backend/**/*.js", "use": "@vercel/node" },
+    { "src": "/frontend/**", "use": "@vercel/static" }
   ],
-  "routes" : [
+  "routes": [
+    { "handle": "filesystem" },
     {
-      "src": "/(.*)",
-      "dest" : "/"
+      "src": "/backend/(.*)",
+      "dest": "backend/$1"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "public/$1"
+    },
+    {
+      "src": "/src/(.*)",
+      "dest":"src/$1"
     }
   ]
 }
-  
